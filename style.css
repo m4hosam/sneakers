@@ -1,0 +1,99 @@
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+}
+.container{
+    margin: 1.5rem 6rem 0;
+}
+
+.nav-list{
+    display: inline-block;
+}
+.nav-links{
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 17px;
+    color: hsl(219, 9%, 45%);
+    padding-bottom: 2rem;
+    margin: 0 1rem;
+}
+.nav-links:hover{
+    border-bottom: .2rem solid hsl(26, 100%, 55%);
+    color: hsl(220, 13%, 13%);
+}
+
+.nav-logo{
+    margin-right: 6rem;
+}
+.logo{
+    padding-top: .6rem;
+}
+.line-breaker{
+    border-top: 0.8px solid hsl(220, 14%, 75%);
+    width: 100%;
+    margin-top: 2.2rem;
+}
+.nav-right{
+    display: inline-block;
+    position: absolute;
+}
+.nav-icon{
+    right: 11.5rem;
+    padding-top: .6rem;
+}
+.nav-avatar{
+    right: 6.5rem;
+}
+
+.avatar{
+    width: 2.5rem;
+    margin: .2rem .2rem; /*For centering hover circle*/
+}
+.avatar:hover{
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    transform-origin: 90% 40%;
+    border-radius: 50%;
+    border: .2rem solid hsl(26, 100%, 55%);
+    margin: 0;
+}
+.hamburger{
+    display: none;
+    margin: .6rem;
+    text-decoration: none;
+    color: black;
+}
+.sideBarBG{
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 60%;
+    z-index: 2;
+}
+.sidebar{
+    padding: 5rem 1rem 5rem;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+@media  (max-width:1115px) {
+    .hamburger{
+        display: inline;
+        visibility: visible;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-list-clicked{
+        display: block;
+    }
+    .nav-links{
+        display: block;
+    }
+}
