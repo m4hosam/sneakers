@@ -1,0 +1,361 @@
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+}
+.container{
+    margin: 1.5rem 8rem 0;
+}
+
+/* Nav Bar */
+.nav-list{
+    display: inline-block;
+}
+.nav-links{
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 17px;
+    color: hsl(219, 9%, 45%);
+    padding-bottom: 2rem;
+    margin: 0 1rem;
+}
+.nav-links:hover{
+    border-bottom: .2rem solid hsl(26, 100%, 55%);
+    color: hsl(220, 13%, 13%);
+}
+
+.nav-logo{
+    margin-right: 4rem;
+}
+.logo{
+    padding-top: .6rem;
+}
+.line-breaker{
+    border-top: 0.8px solid hsl(220, 14%, 75%);
+    width: 100%;
+    margin-top: 2.2rem;
+}
+.nav-right{
+    display: inline-block;
+    position: absolute;
+}
+.nav-icon{
+    right: 11.5rem;
+    padding-top: .6rem;
+}
+.nav-avatar{
+    right: 6.5rem;
+}
+
+.avatar{
+    width: 2.5rem;
+    margin: .2rem .2rem; /*For centering hover circle*/
+}
+.avatar:hover{
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    transform-origin: 90% 40%;
+    border-radius: 50%;
+    border: .2rem solid hsl(26, 100%, 55%);
+    margin: 0;
+}
+.hamburger{
+    display: none;
+    margin: .9rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+}
+.sideBarBG{
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 60%;
+    z-index: 2;
+}
+.sidebar{
+    padding: 5rem 1rem 5rem;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+/* body */
+.product1{
+    width: 100%;
+    border-radius: 10px;
+}
+.content-container{
+    margin: 4rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.images{
+    flex-basis: 45%;
+}
+.sub-images{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.thumbnails{
+    width: 20%;
+    border-radius: 10px; 
+}
+
+
+/* Text left area */
+.text{
+    flex-basis: 45%;
+    margin-top: 4%;
+}
+.yellow-h5{
+    color: hsl(26, 100%, 55%);
+    font-size: 1vw;
+}
+.header{
+    font-size: 2.8vw;
+}
+.productDetails{
+    color: hsl(219, 9%, 45%);
+    font-size: 1.2vw;
+}
+.price-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.discount-container{
+    margin: 1rem 1rem .8rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.price{
+    margin:0 1rem  0 0 ;
+    font-size: 1.8vw;
+}
+.discount{
+    text-align: center;
+    width: 8%;
+    padding: 2px;
+    border-radius: 3px;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    font-weight: 600;
+    font-size: 1vw;
+}
+.previous-price{
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+    font-weight: 600;
+    font-size: 2vh;
+    margin: 0;
+}
+
+/* End of text to buttons */
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10% ;
+}
+.product-number-container{
+    display: flex;
+    width: 25%;
+    height: 3%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: .5rem;
+    padding: 2.4% 2% 3% 2%;
+}
+
+.add{
+    text-decoration: none;
+    justify-content: flex-start;
+    color: hsl(26, 100%, 55%);
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+#span-product-no{
+    font-size: 1.1vw;
+    padding-top: 5%;
+    font-weight: 700;
+}
+.reduce{
+    text-decoration: none;
+    justify-content: flex-end;
+    color: hsl(26, 100%, 55%);
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.add-to-cart{
+    background-color: hsl(26, 100%, 55%);
+    border-radius: .5rem;
+    border: none;
+    color: white;
+    padding: 4% 20%;
+    font-size: 1vw;
+}
+.cart-icon{
+    width: 13%;
+    filter: brightness(0) invert(1);
+    margin-right: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width:900px) {
+    .container{
+        margin: 1.5rem 0rem 0;
+    }
+    /* nav */
+    .navbar{
+        margin: 0 2rem 0 1.5rem;
+    }
+    .nav-avatar{
+        right: 2rem;
+    }
+    .nav-icon{
+        right: 5rem;
+    }
+    .avatar{
+        width: 1.7rem;
+        margin: .4rem .4rem; /*For centering hover circle*/
+    }
+    .avatar:hover{
+        margin: .2rem .2rem;
+    }
+    /* side bar */
+    .hamburger{
+        display: inline;
+        visibility: visible;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-list-clicked{
+        display: block;
+    }
+    .nav-links{
+        display: block;
+    }
+    /* body content */
+
+    .product1{
+        width: 100%;
+    }
+    .content-container{
+        margin: 0;
+        display: block;
+    }
+    .line-breaker{
+        border: 0;
+    }
+    /* Product Images */
+
+    .product1{
+        border-radius: 0;
+    }
+    .sub-images{
+        display: none;
+    }
+    /* text */
+    .text{
+        margin: 1rem 2rem;
+    }
+    .yellow-h5{
+        font-size: 3vw;
+    }
+    .header{
+        font-size: 7vw;
+    }
+    .productDetails{
+        font-size: 4vw;
+    }
+    .price-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .price{
+        font-size: 6vw;
+    }
+    .discount{
+        width: auto;
+        padding: 3px 5px;
+        font-size: 4vw;
+    }
+    .previous-price{
+        font-size: 4vw;
+    }
+    /* buttons */
+    .buttons-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-number-container{
+        width: 95%;
+        padding: 1% 2% 3% 2.5%;
+        margin-bottom: 1rem;
+    }
+    .reduce{
+        font-size: 8vw;
+        padding-left: .5rem;
+    }
+    #span-product-no{
+        font-size: 4vw;
+        padding: 0;
+    }
+    .add{
+        font-size: 8vw;
+        padding-left: .5rem;
+    }
+    .add-to-cart{
+        width: 100%;
+        margin-bottom: 1rem;
+        font-size: 4vw;
+    }
+    .cart-icon{
+        width: 8%;
+    }
+}
+
+
+
+@media  (max-width:1115px) {
+    
+    /* side bar */
+    .hamburger{
+        display: inline;
+        visibility: visible;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-list-clicked{
+        display: block;
+    }
+    .nav-links{
+        display: block;
+    }
+    
+}
