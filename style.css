@@ -190,6 +190,13 @@ body{
     color: hsl(26, 100%, 55%);
     font-size: 1.5vw;
     font-weight: 600;
+    user-select: none;
+}
+.add:hover{
+    cursor: pointer;
+}
+.reduce:hover{
+    cursor: pointer;
 }
 #span-product-no{
     font-size: 1.1vw;
@@ -202,6 +209,7 @@ body{
     color: hsl(26, 100%, 55%);
     font-size: 1.5vw;
     font-weight: 600;
+    user-select: none;
 }
 .add-to-cart{
     background-color: hsl(26, 100%, 55%);
@@ -257,12 +265,12 @@ body{
 .arrow-right{
     right: 50%;
     margin-right: -220px;
-  
+    user-select: none;
 }
 .arrow-left{
     left: 50%;
     margin-left: -220px;
-  
+    user-select: none;
 }
 
 
@@ -307,6 +315,7 @@ body{
     }
     /* body content */
     .arrow{
+        position: absolute;
         display: block !important;
         top: calc(35vw + 94.4px);
     }
