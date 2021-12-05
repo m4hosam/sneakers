@@ -39,11 +39,11 @@ body{
     position: absolute;
 }
 .nav-icon{
-    right: 11.5rem;
+    right: 13rem;
     padding-top: .6rem;
 }
 .nav-avatar{
-    right: 6.5rem;
+    right: 8rem;
 }
 
 .avatar{
@@ -66,23 +66,25 @@ body{
     text-decoration: none;
     color: black;
 }
+.hamburger:hover{
+    cursor: pointer;
+}
 .sideBarBG{
-    width: 40%;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
-    left: 60%;
-    z-index: 2;
+    z-index: 11;
 }
 .sidebar{
     padding: 5rem 1rem 5rem;
-    width: 60%;
+    width: 40%;
     height: 100%;
     background-color: white;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 11;
 }
 
 /* body */
@@ -111,7 +113,7 @@ body{
     border-radius: 10px; 
 }
 .thumbnails:hover{
-    opacity: 50%;
+    opacity: .5;
     cursor: pointer;
 }
 
@@ -313,6 +315,9 @@ body{
     .nav-links{
         display: block;
     }
+    .sidebar{
+        width: 40% !important;
+    }
     /* body content */
     .arrow{
         position: absolute;
@@ -424,6 +429,16 @@ body{
     }
     .nav-links{
         display: block;
+        padding: .5rem 0;
+        margin: .5rem .5rem;
+    }
+    .nav-links:hover{
+        border: 0;
+        border-right: .2rem solid hsl(26, 100%, 55%);
+        color: hsl(220, 13%, 13%);
+    }
+    .sidebar{
+        width: 20%;
     }
     
 }
